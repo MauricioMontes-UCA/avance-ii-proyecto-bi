@@ -16,27 +16,27 @@ Luego, copiamos el archivo `mssql-jdbc-12.8.1.jre11.jar` que se encuentra en `sq
 
 Ejecutamos el archivo `Spoon.bat` y creamos un archivo para hacer una transformación de datos. Para ello, nos vamos al menu `File > New > Transformation`, o bien usamos el atajo `ctrl+N`. Dentro del archivo, para crear una conexión con una base de datos nos dirigimos al menú `File > New > Database Connection` en donde nos aparecerá la siguiente ventana:
 
-![[file_menu.png]]
+![Menú "file"](pictures/file_menu.png)
 
-![[db_connection_windows.png]]
+![Ventana de conexión a base de datos](pictures/db_connection_windows.png)
 
 En esta ventana le damos un nombre a la conexión, seleccionamos el tipo de conexión como "SQL Server (Native)". Ya que la base de datos la estamos trabajando de manera local, el nombre del host es `localhost`. 
 Seleccionamos el nombre de la base de datos, el puerto en el que está funcionando el contenedor de Docker, el nombre de usuario y contraseña. El acceso a utilizar el JDBC nativo.
 
-![[connection_config.png]]
+![Configuración de la conexión](pictures/connection_config.png)
 
 Además, nos dirigimos a la pestaña de opciones para agregar los siguientes parámetros:
 
 - `encrypt = true`
 - `trustServerCertificate = true`
 
-![[setting_variables.png]]
+![Agregando variables para la conexión](pictures/setting_variables.png)
 
 Realizar estos pasos debería ser suficiente para tener una conexión exitosa con la base de datos.
 
-![[db_connection_test.png]]
-![[db_exploration.png]]
+![Prueba de conexión](pictures/db_connection_test.png)
+![Contenido de la base de datos](pictures/db_exploration.png)
 
 Las conexiones hechas se pueden ver en la pestaña de Vista al lado de la zona de trabajo.
 
-![[db_connections_view.png]]
+![Vista de las conexiones en la transformación](pictures/db_connections_view.png)
