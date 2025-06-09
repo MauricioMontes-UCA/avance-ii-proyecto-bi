@@ -40,3 +40,9 @@ Realizar estos pasos debería ser suficiente para tener una conexión exitosa co
 Las conexiones hechas se pueden ver en la pestaña de Vista al lado de la zona de trabajo.
 
 ![Vista de las conexiones en la transformación](pictures/db_connections_view.png)
+
+## Ejecutar ETL
+
+Con el archivo que se encuentra aquí, lo abrimos con Pentaho Data Integration en el menú `File > Open`. Una vez abierto el archivo y arregladas las conexiones con las bases de datos que se encuentran en la pestaña Vista (a la cual se le tendría que cambiar usuario y contraseña), en el lienzo le damos click a "Run"
+
+![Botón Run arriba del lienzo](pictures/run_button.png)
